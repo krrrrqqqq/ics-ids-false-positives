@@ -16,7 +16,7 @@ The paper asks how sensitive an intrusion detection system (IDS) for an industri
 | `src/revision_analysis.py` | Sensitivity analysis (budget, event volume, tail heaviness), cost-optimal operating points, full simulation with 95% intervals | 2.3–2.4; Tables 5–7, Fig. 2 |
 | `results/` | All generated outputs used in the tables and figures | 3 |
 | `data/screening_log.csv` | Title/abstract and full-assessment decisions for the 81 OpenAlex records that passed the keyword filter | 2.1 |
-| `data/included_studies.csv` | Extraction table for the 22 included studies: family, evaluation data, false-positive units, and whether (and where) the full text was checked | 2.1; Table 2 |
+| `data/included_studies.csv` | Extraction table for the 22 included studies: family, evaluation data, false-positive units, and where the full text used for checking was found | 2.1; Table 2 |
 | `scripts/check_reproducibility.py` | Re-runs both scripts in a scratch folder and compares every output with `results/` | — |
 
 ### Outputs and where they appear
@@ -52,7 +52,7 @@ OpenAlex, run on 26 November 2026, works published 2000–2025, matched in title
 AND ("false positive" OR "false alarm")
 ```
 
-617 records. A keyword filter (`threshold`, `CUSUM`, `alarm/alert management`, `fatigue`, `correlation`, `flood`, `reduction`, `triage`, `operating point`) left 81, which were screened by title and abstract; 17 were assessed on their full abstracts and metadata, and 14 were included. Backward snowballing added 8 studies. Every decision and its reason is in `data/screening_log.csv`. The extracted entries were then checked against the full text where it was accessible (16 of 22 studies); `data/included_studies.csv` records which.
+617 records. A keyword filter (`threshold`, `CUSUM`, `alarm/alert management`, `fatigue`, `correlation`, `flood`, `reduction`, `triage`, `operating point`) left 81, which were screened by title and abstract; 17 were assessed on their full abstracts and metadata, and 14 were included. Backward snowballing added 8 studies. Every decision and its reason is in `data/screening_log.csv`. The extracted entries were then checked against the full text of every included study; `data/included_studies.csv` records where each text was found.
 
 ## Citation
 
