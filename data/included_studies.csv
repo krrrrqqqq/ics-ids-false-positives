@@ -4,9 +4,9 @@ ref,study,family,source,full_text_checked,full_text_location,evaluation_data,fp_
 22,Kravchik & Shabtai 2018,A,snowballing,yes,https://arxiv.org/pdf/1806.08110,SWaT testbed,Precision; threshold chosen for best F1
 23,Abdelaty et al. 2022 (DAICS),A,database,yes,https://arxiv.org/pdf/2009.06299,SWaT and WADI testbeds,Counts and operator interventions per hour (6.6 per hour on SWaT)
 24,Hundman et al. 2018,A,snowballing,yes,arXiv preprint,"Spacecraft telemetry (NASA SMAP, MSL); non-ICS",Precision and recall (87.5% and 80%)
-25,Zhang et al. 2025 (ATLAC),A,database,yes,"PDF provided by the authors' team (Array, open access)","Tennessee Eastman simulation, 1 min sampling, raw and with added noise",Per-sample FPR (0.45-0.66 on noisy data) alongside F1
-26,Goh et al. 2017,B,database,yes,PDF obtained via library access,"SWaT testbed, stage 1 only (four-day attack log)",Count of unexplained alarms (four)
-27,Ghaeini et al. 2018,B,database,yes,PDF obtained via library access,"SWaT testbed, three days of recordings (about 120 GB)","False alarms in one day of normal operation, by threshold"
+25,Zhang et al. 2025 (ATLAC),A,database,yes,Array (open access),"Tennessee Eastman simulation, 1 min sampling, raw and with added noise",Per-sample FPR (0.45-0.66 on noisy data) alongside F1
+26,Goh et al. 2017,B,database,yes,Publisher PDF,"SWaT testbed, stage 1 only (four-day attack log)",Count of unexplained alarms (four)
+27,Ghaeini et al. 2018,B,database,yes,Publisher PDF,"SWaT testbed, three days of recordings (about 120 GB)","False alarms in one day of normal operation, by threshold"
 28,Do et al. 2015,B,database,yes,https://ojs-test.apps.ocp.math.cnrs.fr/index.php/J-SFdS/article/view/481/455,"Simulated SCADA water-distribution model, 100 s sampling",Worst-case probability of a false alarm within a 24-sample (about 40 min) window
 29,Gualandi & Papadopoulos 2023,B,database,yes,https://www.es.mdu.se/pdf_publications/6794.pdf,"Simulated mass-spring-damper plant, 0.05 s sampling",Average run length between false alarms (ARL0; samples)
 30,Renganathan et al. 2020,C,database,yes,arXiv preprint,Numerical example,Worst-case false-alarm probability (bound) and simulated rate (%)
@@ -14,10 +14,10 @@ ref,study,family,source,full_text_checked,full_text_location,evaluation_data,fp_
 32,Yuan & Zhang 2025,C,database,yes,https://rpsonline.com.sg/proceedings/esrel-sra-e2025/pdf/ESREL-SRA-E2025-P4806.pdf,Public dataset of a cyber-physical subsystem; origin not stated,Per-sample false-alarm rate at conformal level alpha = 0.05
 33,Ghafouri et al. 2016,D,database,yes,author copy,Numerical water-network case built on a published demand profile,Per-step FP rate; investigation cost accumulated over a horizon
 34,Ghafouri et al. 2018,D,database,yes,https://arxiv.org/abs/1804.11022,"Tennessee Eastman simulation, 72 h runs",Thresholds set for an expected time between false alarms of 1 h
-35,Dehbozorgi et al. 2025,D,database,yes,PDF obtained via library access,"IEEE 13- and 123-bus feeders, power-flow simulation with a three-month load profile",True-negative rate; monetary cost of false alarms and missed attacks
+35,Dehbozorgi et al. 2025,D,database,yes,Publisher PDF,"IEEE 13- and 123-bus feeders, power-flow simulation with a three-month load profile",True-negative rate; monetary cost of false alarms and missed attacks
 36,Gu et al. 2006,D,snowballing,yes,https://people.engr.tamu.edu/guofei/paper/Gu_asiaccs06_cid.pdf,DARPA 1998/1999 data and 6 h of campus HTTP traffic; IT,"Per-packet or per-flow FPR, base rates near 1e-5"
 37,Feng et al. 2019,E,snowballing,yes,NDSS open access,SWaT and WADI testbeds,Per-sample FPR (3e-4 on SWaT)
-38,Julisch 2003,F,snowballing,yes,PDF obtained via library access,"One month of alarms (156,380) from a commercial network IDS on a production network; IT",Alarm counts; share per root cause; estimated cut in future alarm load (87%)
+38,Julisch 2003,F,snowballing,yes,Publisher PDF,"One month of alarms (156,380) from a commercial network IDS on a production network; IT",Alarm counts; share per root cause; estimated cut in future alarm load (87%)
 39,Koucham et al. 2022,F,database,yes,https://hal.science/hal-03636549,Hardware-in-the-loop testbed: 62 h of captures with 26 attacks and 98 legitimate operator interventions,False and missing correlation rates; reduction in alerts sent to the operator (8-84%)
 40,Wolsing et al. 2024,F,database,yes,https://www.comsys.rwth-aachen.de/fileadmin/papers/2023/2023-wolsing-ensemble-iids.pdf,SWaT and WADI testbeds,Number of false-positive alarm episodes (6-11 for the best ensemble on SWaT)
 41,Hassan et al. 2019 (NoDoze),G,snowballing,yes,https://www.cs.virginia.edu/~hur7wv/papers/hassan-ndss19.pdf,"Enterprise deployment: 191 hosts, 5 days, 364 alerts; IT",Share of false alarms removed (84%); analyst hours per week
