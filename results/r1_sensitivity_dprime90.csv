@@ -1,0 +1,10 @@
+mode,budget,unit,gauss_N10000,gauss_N100000,gauss_N1000000,t30_N100000,t10_N100000,t5_N100000,t3_N100000
+Passive alerting,30,per day,4.03,4.71,5.29,4.99,5.69,7.22,10.15
+Passive alerting,100,per day,3.61,4.37,5.00,4.55,4.99,5.85,7.18
+Passive alerting,300,per day,3.16,4.03,4.71,4.14,4.39,4.82,5.32
+Operator-confirmed,3,per day,4.71,5.29,5.81,5.79,7.19,10.90,20.46
+Operator-confirmed,10,per day,4.37,5.00,5.55,5.37,6.37,8.78,14.10
+Operator-confirmed,30,per day,4.03,4.71,5.29,4.99,5.69,7.22,10.15
+Automatic response,0.1,per year,6.72,7.11,7.49,9.06,17.53,63.92,427.55
+Automatic response,1,per year,6.29,6.72,7.11,8.22,14.08,40.78,199.14
+Automatic response,10,per year,5.83,6.29,6.72,7.40,11.32,26.18,93.11

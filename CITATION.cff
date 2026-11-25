@@ -1,0 +1,31 @@
+cff-version: 1.2.0
+message: "If you use this code or data, please cite the paper and this repository."
+title: "ics-ids-false-positives: code and data for 'False Positives in Intrusion Detection for Critical Infrastructure'"
+type: software
+version: 1.0.0
+date-released: 2026-11-26
+license: MIT
+repository-code: "https://github.com/krrrrqqqq/ics-ids-false-positives"
+authors:
+  - family-names: Li
+    given-names: Dmitriy
+    affiliation: "International Information Technology University (IITU), Almaty, Kazakhstan"
+  - family-names: Shimanayeva
+    given-names: Kristina
+    affiliation: "International Information Technology University (IITU), Almaty, Kazakhstan"
+keywords:
+  - industrial control systems
+  - intrusion detection
+  - false positives
+  - alarm fatigue
+  - base-rate fallacy
+  - CUSUM
+preferred-citation:
+  type: article
+  title: "False Positives in Intrusion Detection for Critical Infrastructure: Balancing Missed Attacks Against Self-Inflicted Denial of Service"
+  authors:
+    - family-names: Li
+      given-names: Dmitriy
+    - family-names: Shimanayeva
+      given-names: Kristina
+  year: 2026
