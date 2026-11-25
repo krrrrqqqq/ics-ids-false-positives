@@ -14,6 +14,7 @@ The paper asks how sensitive an intrusion detection system (IDS) for an industri
 | --- | --- | --- |
 | `src/analysis.py` | Base-rate model, operating-constraint model, calibration of the alarm-logic simulation | 2.2–2.4; Tables 3–4, Fig. 1 |
 | `src/revision_analysis.py` | Sensitivity analysis (budget, event volume, tail heaviness), cost-optimal operating points, full simulation with 95% intervals | 2.3–2.4; Tables 5–7, Fig. 2 |
+| `src/cost_ratio_analysis.py` | Sensitivity of the cost-optimal threshold to the false-positive cost: break-even ratio C_FN/C_FP per mode and separability, and a sweep of C_FP (0.1×, 1×, 10×) × C_FN | 2.3; Table 6 |
 | `results/` | All generated outputs used in the tables and figures | 3 |
 | `data/screening_log.csv` | Title/abstract and full-assessment decisions for the 81 OpenAlex records that passed the keyword filter | 2.1 |
 | `data/included_studies.csv` | Extraction table for the 22 included studies: family, evaluation data, false-positive units, and where the full text used for checking was found | 2.1; Table 2 |
@@ -29,6 +30,8 @@ The paper asks how sensitive an intrusion detection system (IDS) for an industri
 | `results/r1_sensitivity_dprime90.csv` | Table 5 |
 | `results/revision.json` → `R2` | Table 6 (cost-optimal operating points) |
 | `results/r3_simulation_full.csv` | Table 7, Fig. 2 |
+| `results/r4_cost_breakeven.csv` | Table 6, last column (break-even C_FN/C_FP) |
+| `results/r4_cost_sweep.csv` | Section 3.3, sweep of C_FP and C_FN |
 | `results/revision.json` → `FAR` | Validation false-alarm rates (Section 3.4) |
 
 ## Reproduce
@@ -39,6 +42,7 @@ Python 3.10 or newer.
 pip install -r requirements.txt
 python src/analysis.py            # about 40 s; writes results/summary.json, a1, a2
 python src/revision_analysis.py   # about 10 s; needs results/summary.json
+python src/cost_ratio_analysis.py  # under 1 s
 python scripts/check_reproducibility.py   # optional: verifies the committed results
 ```
 

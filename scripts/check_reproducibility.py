@@ -1,4 +1,4 @@
-"""Re-run both analysis scripts in a scratch folder and compare every output with the committed results/.
+"""Re-run all analysis scripts in a scratch folder and compare every output with the committed results/.
 
 Usage (from the repository root):  python scripts/check_reproducibility.py
 Exit code 0 = all outputs reproduced within tolerance; 1 = a difference was found.
@@ -15,7 +15,8 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 RTOL, ATOL = 1e-6, 1e-9
 FILES = ["a1_base_rate.csv", "a2_recall_vs_d.csv", "r1_sensitivity_dprime90.csv",
-         "r3_simulation_full.csv", "summary.json", "revision.json"]
+         "r3_simulation_full.csv", "r4_cost_breakeven.csv", "r4_cost_sweep.csv",
+         "summary.json", "revision.json"]
 
 
 def close(a, b):
@@ -48,7 +49,7 @@ def main():
         tmp = Path(tmp)
         shutil.copytree(ROOT / "src", tmp / "src")
         (tmp / "results").mkdir()
-        for script in ["analysis.py", "revision_analysis.py"]:
+        for script in ["analysis.py", "revision_analysis.py", "cost_ratio_analysis.py"]:
             print(f"running {script} ...", flush=True)
             subprocess.run([sys.executable, str(tmp / "src" / script)], cwd=tmp, check=True,
                            stdout=subprocess.DEVNULL)
