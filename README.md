@@ -18,6 +18,7 @@ The paper asks how sensitive an intrusion detection system (IDS) for an industri
 | `data/screening_log.csv` | Title/abstract and full-assessment decisions for the 81 OpenAlex records that passed the keyword filter | 2.1 |
 | `data/included_studies.csv` | Extraction table for the 22 included studies: family, evaluation data, false-positive units, and where the full text used for checking was found | 2.1; Table 2 |
 | `scripts/check_reproducibility.py` | Re-runs both scripts in a scratch folder and compares every output with `results/` | — |
+| `scripts/make_figures.py` | Draws Fig. 1 and Fig. 2 from `results/` into `figures/` (requires matplotlib) | Figs. 1–2 |
 
 ### Outputs and where they appear
 
